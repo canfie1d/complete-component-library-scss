@@ -1,0 +1,471 @@
+/*!
+ * # Semantic UI 2.2.12 - Icon
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*
+ * Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ * License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import './icon-options.scss';
+
+/*******************************
+             Icon
+*******************************/
+
+@font-face {
+  font-family: 'Icons';
+  src: font-url('icons.woff2') format('woff2'),
+    font-url('icons.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+i {
+  &.icon {
+    display: inline-block;
+    opacity: 1;
+    margin: 0em 0.25rem 0em 0em;
+    width: 1.18em;
+    height: 1em;
+    font-family: 'Icons';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    text-align: center;
+    speak: none;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    &:before {
+      background: none !important;
+    }
+    &.loading {
+      height: 1em;
+      line-height: 1;
+      -webkit-animation: icon-loading 2s linear infinite;
+      animation: icon-loading 2s linear infinite;
+    }
+    &.hover,
+    &.active {
+      opacity: 1 !important;
+    }
+  }
+  &.emphasized.icon {
+    opacity: 1 !important;
+  }
+  &.disabled.icon {
+    opacity: 0.45 !important;
+  }
+  &.fitted.icon {
+    width: auto;
+    margin: 0em;
+  }
+  &.link {
+    &.icon,
+    &.icons {
+      cursor: pointer;
+      opacity: 0.8;
+      -webkit-transition: opacity 0.1s ease;
+      transition: opacity 0.1s ease;
+    }
+    &.icon:hover,
+    &.icons:hover {
+      opacity: 1 !important;
+    }
+  }
+  &.circular {
+    &.icon {
+      border-radius: 500em !important;
+      line-height: 1 !important;
+      padding: 0.5em 0.5em !important;
+      box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
+      width: 2em !important;
+      height: 2em !important;
+    }
+    &.inverted.icon {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  &.flipped.icon,
+  &.horizontally.flipped.icon {
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+  &.vertically.flipped.icon {
+    -webkit-transform: scale(1, -1);
+    transform: scale(1, -1);
+  }
+  &.rotated.icon,
+  &.right.rotated.icon,
+  &.clockwise.rotated.icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  &.left.rotated.icon,
+  &.counterclockwise.rotated.icon {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  &.bordered {
+    &.icon {
+      line-height: 1;
+      vertical-align: baseline;
+      width: 2em;
+      height: 2em;
+      padding: 0.5em 0.41em !important;
+      box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
+    }
+    &.inverted.icon {
+      border: none;
+      box-shadow: none;
+      background-color: #1b1c1d !important;
+      color: $white !important;
+    }
+  }
+  &.inverted {
+    &.circular.icon {
+      background-color: #1b1c1d !important;
+      color: $white !important;
+    }
+    &.icon {
+      color: $white;
+    }
+  }
+  &.red.icon {
+    color: $red !important;
+  }
+  &.inverted {
+    &.red.icon {
+      color: $inverted-red !important;
+    }
+    &.bordered.red.icon,
+    &.circular.red.icon {
+      background-color: $red !important;
+      color: $white !important;
+    }
+  }
+  &.orange.icon {
+    color: $orange !important;
+  }
+  &.inverted {
+    &.orange.icon {
+      color: $inverted-orange !important;
+    }
+    &.bordered.orange.icon,
+    &.circular.orange.icon {
+      background-color: $orange !important;
+      color: $white !important;
+    }
+  }
+  &.yellow.icon {
+    color: $yellow !important;
+  }
+  &.inverted {
+    &.yellow.icon {
+      color: $inverted-yellow !important;
+    }
+    &.bordered.yellow.icon,
+    &.circular.yellow.icon {
+      background-color: $yellow !important;
+      color: $white !important;
+    }
+  }
+  &.olive.icon {
+    color: $olive !important;
+  }
+  &.inverted {
+    &.olive.icon {
+      color: $inverted-olive !important;
+    }
+    &.bordered.olive.icon,
+    &.circular.olive.icon {
+      background-color: $olive !important;
+      color: $white !important;
+    }
+  }
+  &.green.icon {
+    color: $green !important;
+  }
+  &.inverted {
+    &.green.icon {
+      color: $inverted-green !important;
+    }
+    &.bordered.green.icon,
+    &.circular.green.icon {
+      background-color: $green !important;
+      color: $white !important;
+    }
+  }
+  &.teal.icon {
+    color: $teal !important;
+  }
+  &.inverted {
+    &.teal.icon {
+      color: $inverted-teal !important;
+    }
+    &.bordered.teal.icon,
+    &.circular.teal.icon {
+      background-color: $teal !important;
+      color: $white !important;
+    }
+  }
+  &.blue.icon {
+    color: $blue !important;
+  }
+  &.inverted {
+    &.blue.icon {
+      color: $inverted-blue !important;
+    }
+    &.bordered.blue.icon,
+    &.circular.blue.icon {
+      background-color: $blue !important;
+      color: $white !important;
+    }
+  }
+  &.violet.icon {
+    color: $violet !important;
+  }
+  &.inverted {
+    &.violet.icon {
+      color: $inverted-violet !important;
+    }
+    &.bordered.violet.icon,
+    &.circular.violet.icon {
+      background-color: $violet !important;
+      color: $white !important;
+    }
+  }
+  &.purple.icon {
+    color: $purple !important;
+  }
+  &.inverted {
+    &.purple.icon {
+      color: $inverted-purple !important;
+    }
+    &.bordered.purple.icon,
+    &.circular.purple.icon {
+      background-color: $purple !important;
+      color: $white !important;
+    }
+  }
+  &.pink.icon {
+    color: $pink !important;
+  }
+  &.inverted {
+    &.pink.icon {
+      color: $inverted-pink !important;
+    }
+    &.bordered.pink.icon,
+    &.circular.pink.icon {
+      background-color: $pink !important;
+      color: $white !important;
+    }
+  }
+  &.brown.icon {
+    color: $brown !important;
+  }
+  &.inverted {
+    &.brown.icon {
+      color: $inverted-brown !important;
+    }
+    &.bordered.brown.icon,
+    &.circular.brown.icon {
+      background-color: $brown !important;
+      color: $white !important;
+    }
+  }
+  &.grey.icon {
+    color: $grey !important;
+  }
+  &.inverted {
+    &.grey.icon {
+      color: $inverted-grey !important;
+    }
+    &.bordered.grey.icon,
+    &.circular.grey.icon {
+      background-color: $grey !important;
+      color: $white !important;
+    }
+  }
+  &.black.icon {
+    color: #1b1c1d !important;
+  }
+  &.inverted {
+    &.black.icon {
+      color: #545454 !important;
+    }
+    &.bordered.black.icon,
+    &.circular.black.icon {
+      background-color: #1b1c1d !important;
+      color: $white !important;
+    }
+  }
+  &.mini {
+    &.icon,
+    &.icons {
+      line-height: 1;
+      font-size: 0.4em;
+    }
+  }
+  &.tiny {
+    &.icon,
+    &.icons {
+      line-height: 1;
+      font-size: 0.5em;
+    }
+  }
+  &.small {
+    &.icon,
+    &.icons {
+      line-height: 1;
+      font-size: 0.75em;
+    }
+  }
+  &.icon,
+  &.icons {
+    font-size: 1em;
+  }
+  &.large {
+    &.icon,
+    &.icons {
+      line-height: 1;
+      vertical-align: middle;
+      font-size: 1.5em;
+    }
+  }
+  &.big {
+    &.icon,
+    &.icons {
+      line-height: 1;
+      vertical-align: middle;
+      font-size: 2em;
+    }
+  }
+  &.huge {
+    &.icon,
+    &.icons {
+      line-height: 1;
+      vertical-align: middle;
+      font-size: 4em;
+    }
+  }
+  &.massive {
+    &.icon,
+    &.icons {
+      line-height: 1;
+      vertical-align: middle;
+      font-size: 8em;
+    }
+  }
+  &.icons {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      margin: 0em;
+      margin: 0;
+      &:first-child {
+        position: static;
+        width: auto;
+        height: auto;
+        vertical-align: top;
+        -webkit-transform: none;
+        transform: none;
+        margin-right: 0.25rem;
+      }
+    }
+    .corner.icon {
+      top: auto;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: none;
+      transform: none;
+      font-size: 0.45em;
+      text-shadow: -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white,
+        1px 1px 0 $white;
+    }
+    .top {
+      &.right.corner.icon {
+        top: 0;
+        left: auto;
+        right: 0;
+        bottom: auto;
+      }
+      &.left.corner.icon {
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: auto;
+      }
+    }
+    .bottom {
+      &.left.corner.icon {
+        top: auto;
+        left: 0;
+        right: auto;
+        bottom: 0;
+      }
+      &.right.corner.icon {
+        top: auto;
+        left: auto;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .inverted.corner.icon {
+      text-shadow: -1px -1px 0 #1b1c1d, 1px -1px 0 #1b1c1d, -1px 1px 0 #1b1c1d,
+        1px 1px 0 #1b1c1d;
+    }
+  }
+}
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+    Loading
+---------------*/
+
+@-webkit-keyframes icon-loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes icon-loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

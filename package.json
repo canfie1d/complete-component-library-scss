@@ -1,0 +1,15 @@
+{
+  "name": "ccl-scss",
+  "version": "1.0.0-beta.1",
+  "title": "Complete Component Library SCSS",
+  "description": "This package serves the default SCSS theme for `complete-component-library`",
+  "author": "Ryan Canfield <ryancanfield@me.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/canfie1d/complete-component-library-scss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/canfie1d/complete-component-library-scss"
+  }
+}
