@@ -4,7 +4,7 @@
 
 ### Fork this repo to re-theme CCL components
 
-This package serves SCSS for `complete-component-library` through an installed node module found [here](https://www.npmjs.com/package/ccl-scss
+This package serves SCSS for `complete-component-library` through an installed node module found [here](https://www.npmjs.com/package/ccl-scss)
 
 ### Available Icons
 
